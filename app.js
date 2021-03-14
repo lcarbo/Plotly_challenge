@@ -5,7 +5,7 @@ function gatherDataset(sample) {
         result = resultList[0];
         PANEL = d3.select("#sample-metadata"); 
         PANEL.html("");
-        object.entries(result).forEach(([key, value]) => { 
+        Object.entries(result).forEach(([key, value]) => { 
             PANEL.append("h6").text(`${key}: ${value}`);
         });
     });
